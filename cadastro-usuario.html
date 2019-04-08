@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Cadastro de Usuário</title>
+    </head>
+    <body>
+        <h1>Cadastro de Novo Usuário</h1>
+        <hr>
+        <form method="POST" action="cadastrar.html">
+            <form method="POST" action="cancelar.html">
+
+        <fieldset>
+            <legend><h3>Dados Pessoais</h3></legend>
+        <div>
+            <label>Nome Completo:
+                <input type="text" name="nome" size="50" placeholder="Digite seu nome completo" required />
+            </label>
+        </div>
+        <div>
+            <label>CPF:
+                <input type="text" name="CPF" size="30" placeholder="Digite seu CPF" required />
+            </label>
+        </div>
+        <div>
+            <label>Data de Nascimento
+                <input type="date" name="nascimento">
+            </label>
+        </div>
+        <div>
+            <label>Sexo
+                <input type="radio" name="sexo" value="F">
+                Feminino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="M">
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="outros" value="O">
+                Outros
+            </label>
+        </div>
+        <div>
+            <label>E-mail:
+                <input type="text" name="email" size="50" placeholder="Digite seu e-mail" required />
+            </label>
+        </div>
+        <div>
+            <label>Celular:
+                <input type="text" name="celular" size="20" placeholder="Digite o DDD + Número" required />
+            </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><h3>Endereço:</h3></legend>
+        <div>
+            <label>Endereço
+                <input type="text" name="logradouro" size="50" placeholder="Logradouro, nº" required />
+            </label>
+            <label>Complemento:
+                <input type="text" name="complemento" size="10" placeholder="Apto, bloco, etc." />
+            </label>
+        </div>
+        <div>
+            <label>Bairro:
+                <input type="text" name="bairro" size="20" placeholder="Digite seu bairro" required />
+            </label>
+            <label>CEP:
+                <input type="text" name="cep" size="20" placeholder="CEP" required />
+            </label>
+        </div>
+        <div>
+            <label>Cidade:
+                <input type="text" name="cidade" size="20" placeholder="Digite sua cidade" required />
+            </label>
+            <label>Estado
+                <input type="text" name="estado" size="5" placeholder="Sigla" required />
+            </label>
+        </div>
+        </fieldset>
+        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cancelar">
+        </form>
+        </form>
+    </body>
+</html>

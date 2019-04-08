@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Ficha Cadastral</title>
+        <form method="POST" action="cadastrar.html"></form>
+
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .titulo{
+                color:darkgray;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .campos{
+                background-color: #ddd;
+                border-color: #333;
+                margin-bottom:30px;
+                text-align: left;
+                margin-right: 20px;
+            }
+
+            .campos-2{
+                background-color: #ddd;
+                border-color: #333;
+                margin-bottom:30px;
+                text-align: left;
+                float: left;
+            }
+
+            .botao{
+                position: center;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        <p class="titulo">Ficha Cadastral</p>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+
+            <div>
+                <label for="nome" required>Nome:
+                    <br><input type="text" size="150" class="campos">
+                </label>
+            </div>
+
+            <div>
+                <label for="rg" required>RG:
+                    <br><input type="text" size="50" class="campos">
+                </label>
+            </div>
+            <div>
+                <label for="cpf" required>CPF:
+                    <br><input type="text" size="50" class="campos-2">
+                </label>
+            </div>
+
+            <div>
+                <label for="endereco" required>Endereço:
+                    <br><input type="text" size="150" class="campos">
+                </label>
+            </div>
+
+            <div>
+                <label for="data-nascimento">Data de Nascimento
+                    <br><input type="text" size="50" class="campos">
+                </label>
+            </div>
+
+            <div>
+                <select name="genero" class="campos" >Gênero</select>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">masculino</option>
+                <option value="outros">Outros</option>
+            </div>
+
+            <div>
+                <label for="situacao-civil">Situação Civil:
+                    <br><input type="radio" name="situacao-civil" checked>Solteira(o)
+                    <input type="radio" name="situacao-civil">Casada(o)
+                    <input type="radio" name="situacao-civil">Viúva(o)
+                </label>
+            </div>
+
+            <div>
+                <center><input type="submit" class="botao"></center>
+            </div>
+        </fieldset>
+    </body>
+</html>
